@@ -75,6 +75,7 @@ h2 {
 .gallery li {
   width: calc((100% - 48px) / 3);
   height: auto;
+  margin-bottom: 51px;
 }
 
 #name-input {
@@ -88,6 +89,77 @@ h2 {
   font-size: 16px;
   line-height: 1.5;
   letter-spacing: 0.04em;
-  color: #2e2f42;
+  /* color: #2e2f42; */
+  margin-top: 24px;
   padding-left: 16px;
+}
+
+#name-input:hover,
+.login-form input:hover {
+  border: 1px solid #000;
+}
+
+.login-form {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  margin-top: 24px;
+}
+
+.login-form label {
+  display: flex;
+  flex-direction: column;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.04em;
+  color: #2e2f42;
+}
+
+.login-form input {
+  border: 1px solid #808080;
+  border-radius: 4px;
+  width: 360px;
+  height: 40px;
+  padding-left: 16px;
+}
+
+button {
+  border: none;
+  cursor: pointer;
+  border-radius: 8px;
+  width: 86px;
+  height: 40px;
+  background: #4e75ff;
+  font-family: var(--font-family);
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.04em;
+  color: #fff;
+}
+
+button:hover {
+  background: #6c8cff;
+}
+
+.widget {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 10px;
+  font-family: var(--font-family);
+}
+
+.widget p {
+  font-weight: 400;
+  color: #2e2f42;
+}
+.change-color {
+  border-radius: 8px;
+  width: 148px;
+  height: 40px;
+  background: #4e75ff;
+  font-weight: 500;
 }
